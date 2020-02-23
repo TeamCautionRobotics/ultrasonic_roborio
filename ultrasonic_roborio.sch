@@ -1,0 +1,522 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 3700 2050 0    50   ~ 0
+Brown
+Text Notes 3700 2150 0    50   ~ 0
+White
+Text Notes 3700 2250 0    50   ~ 0
+Blue
+Text Notes 3700 2350 0    50   ~ 0
+Black
+Text Label 4200 2150 0    50   ~ 0
+Teach0
+Text Label 4200 2350 0    50   ~ 0
+SensorOut0
+Wire Wire Line
+	4200 2250 4450 2250
+$Comp
+L power:GND #PWR0101
+U 1 1 5E51BE89
+P 4450 2400
+F 0 "#PWR0101" H 4450 2150 50  0001 C CNN
+F 1 "GND" H 4455 2227 50  0000 C CNN
+F 2 "" H 4450 2400 50  0001 C CNN
+F 3 "" H 4450 2400 50  0001 C CNN
+	1    4450 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2250 4450 2400
+Wire Wire Line
+	4200 2050 4450 2050
+$Comp
+L power:+24V #PWR0102
+U 1 1 5E51B415
+P 4450 1950
+F 0 "#PWR0102" H 4450 1800 50  0001 C CNN
+F 1 "+24V" H 4465 2123 50  0000 C CNN
+F 2 "" H 4450 1950 50  0001 C CNN
+F 3 "" H 4450 1950 50  0001 C CNN
+	1    4450 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 1950 4450 2050
+Wire Wire Line
+	5000 2500 5500 2500
+$Comp
+L Device:R R1
+U 1 1 5E52011D
+P 5650 2500
+F 0 "R1" V 5443 2500 50  0000 C CNN
+F 1 "4.7k" V 5534 2500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5580 2500 50  0001 C CNN
+F 3 "~" H 5650 2500 50  0001 C CNN
+	1    5650 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5800 2500 5850 2500
+Wire Wire Line
+	5850 2500 5850 2550
+$Comp
+L Device:R R2
+U 1 1 5E5208A1
+P 5850 2700
+F 0 "R2" H 5920 2746 50  0000 L CNN
+F 1 "4.7k" H 5920 2655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5780 2700 50  0001 C CNN
+F 3 "~" H 5850 2700 50  0001 C CNN
+	1    5850 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2850 5850 2900
+$Comp
+L power:GND #PWR0103
+U 1 1 5E520E25
+P 5850 2900
+F 0 "#PWR0103" H 5850 2650 50  0001 C CNN
+F 1 "GND" H 5855 2727 50  0000 C CNN
+F 2 "" H 5850 2900 50  0001 C CNN
+F 3 "" H 5850 2900 50  0001 C CNN
+	1    5850 2900
+	1    0    0    -1  
+$EndComp
+Text Label 5000 2500 0    50   ~ 0
+SensorOut0
+Text Label 5000 1700 0    50   ~ 0
+Teach0
+Wire Wire Line
+	5000 1700 5500 1700
+Wire Wire Line
+	5500 1500 5500 1700
+Connection ~ 5500 1700
+Wire Wire Line
+	5500 1700 5500 1900
+Wire Wire Line
+	5950 1450 5950 1500
+Wire Wire Line
+	5950 1500 5900 1500
+$Comp
+L power:+24V #PWR0104
+U 1 1 5E52A54C
+P 5950 1450
+F 0 "#PWR0104" H 5950 1300 50  0001 C CNN
+F 1 "+24V" H 5965 1623 50  0000 C CNN
+F 2 "" H 5950 1450 50  0001 C CNN
+F 3 "" H 5950 1450 50  0001 C CNN
+	1    5950 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5E52AA1B
+P 5950 1950
+F 0 "#PWR0105" H 5950 1700 50  0001 C CNN
+F 1 "GND" H 5955 1777 50  0000 C CNN
+F 2 "" H 5950 1950 50  0001 C CNN
+F 3 "" H 5950 1950 50  0001 C CNN
+	1    5950 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 1900 5950 1900
+Wire Wire Line
+	5950 1900 5950 1950
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5E529459
+P 5700 1500
+F 0 "SW1" H 5700 1693 50  0000 C CNN
+F 1 "SW_Push" H 5700 1694 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 5700 1700 50  0001 C CNN
+F 3 "~" H 5700 1700 50  0001 C CNN
+	1    5700 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW0
+U 1 1 5E527FD3
+P 5700 1900
+F 0 "SW0" H 5700 2093 50  0000 C CNN
+F 1 "SW_Push" H 5700 2094 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 5700 2100 50  0001 C CNN
+F 3 "~" H 5700 2100 50  0001 C CNN
+	1    5700 1900
+	1    0    0    -1  
+$EndComp
+Connection ~ 5850 2500
+Wire Wire Line
+	5850 2500 6100 2500
+$Comp
+L Connector:Conn_01x03_Female J3
+U 1 1 5E530FB9
+P 6950 2100
+F 0 "J3" H 6900 2300 50  0000 L CNN
+F 1 "roboRIO A0" H 6900 1900 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 6950 2100 50  0001 C CNN
+F 3 "~" H 6950 2100 50  0001 C CNN
+	1    6950 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0106
+U 1 1 5E532EDA
+P 4350 3200
+F 0 "#PWR0106" H 4350 3050 50  0001 C CNN
+F 1 "+24V" H 4365 3373 50  0000 C CNN
+F 2 "" H 4350 3200 50  0001 C CNN
+F 3 "" H 4350 3200 50  0001 C CNN
+	1    4350 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP2
+U 1 1 5E533F2F
+P 6500 2400
+F 0 "JP2" V 6500 2468 50  0000 L CNN
+F 1 "SolderJumper_2_Bridged" H 6500 2514 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 6500 2400 50  0001 C CNN
+F 3 "~" H 6500 2400 50  0001 C CNN
+	1    6500 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4600 3350 4600 3400
+Wire Wire Line
+	4550 3350 4600 3350
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 5E53373E
+P 4400 3350
+F 0 "JP1" H 4400 3250 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 4400 3464 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 4400 3350 50  0001 C CNN
+F 3 "~" H 4400 3350 50  0001 C CNN
+	1    4400 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5E532C10
+P 4600 3400
+F 0 "#PWR0107" H 4600 3150 50  0001 C CNN
+F 1 "GND" H 4605 3227 50  0000 C CNN
+F 2 "" H 4600 3400 50  0001 C CNN
+F 3 "" H 4600 3400 50  0001 C CNN
+	1    4600 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3350 4200 3350
+Wire Wire Line
+	6750 2000 6500 2000
+Wire Wire Line
+	6750 2100 6500 2100
+Text Label 6500 2000 0    50   ~ 0
+Out0
+Text Label 6100 2500 2    50   ~ 0
+Out0
+Wire Wire Line
+	6500 2250 6500 2200
+Wire Wire Line
+	6500 2200 6750 2200
+NoConn ~ 6500 2100
+$Comp
+L power:GND #PWR0108
+U 1 1 5E537E45
+P 6500 2600
+F 0 "#PWR0108" H 6500 2350 50  0001 C CNN
+F 1 "GND" H 6505 2427 50  0000 C CNN
+F 2 "" H 6500 2600 50  0001 C CNN
+F 3 "" H 6500 2600 50  0001 C CNN
+	1    6500 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2600 6500 2550
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5E53D1F9
+P 4350 3250
+F 0 "#FLG0101" H 4350 3325 50  0001 C CNN
+F 1 "PWR_FLAG" H 4350 3423 50  0001 C CNN
+F 2 "" H 4350 3250 50  0001 C CNN
+F 3 "~" H 4350 3250 50  0001 C CNN
+	1    4350 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5E53D80C
+P 6500 2550
+F 0 "#FLG0102" H 6500 2625 50  0001 C CNN
+F 1 "PWR_FLAG" V 6500 2678 50  0001 L CNN
+F 2 "" H 6500 2550 50  0001 C CNN
+F 3 "~" H 6500 2550 50  0001 C CNN
+	1    6500 2550
+	0    1    1    0   
+$EndComp
+Connection ~ 6500 2550
+Wire Wire Line
+	4350 3250 4350 3200
+Wire Wire Line
+	4200 3250 4350 3250
+Connection ~ 4350 3250
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 5E531990
+P 4000 3250
+F 0 "J1" H 4000 3350 50  0000 C CNN
+F 1 "PCM solenoid" H 3950 3050 50  0000 L CNN
+F 2 "ultrasonic_roborio:LSF-SMT 3.50_02_135 3.5SN" H 4000 3250 50  0001 C CNN
+F 3 "~" H 4000 3250 50  0001 C CNN
+	1    4000 3250
+	-1   0    0    -1  
+$EndComp
+Text Notes 7000 2050 0    50   ~ 0
+S
+Text Notes 7000 2150 0    50   ~ 0
+5V
+Text Notes 7000 2250 0    50   ~ 0
+GND
+Text Notes 3700 4500 0    50   ~ 0
+Brown
+Text Notes 3700 4600 0    50   ~ 0
+White
+Text Notes 3700 4700 0    50   ~ 0
+Blue
+Text Notes 3700 4800 0    50   ~ 0
+Black
+Text Label 4200 4600 0    50   ~ 0
+Teach1
+Text Label 4200 4800 0    50   ~ 0
+SensorOut1
+Wire Wire Line
+	4200 4700 4450 4700
+$Comp
+L power:GND #PWR02
+U 1 1 5E559201
+P 4450 4850
+F 0 "#PWR02" H 4450 4600 50  0001 C CNN
+F 1 "GND" H 4455 4677 50  0000 C CNN
+F 2 "" H 4450 4850 50  0001 C CNN
+F 3 "" H 4450 4850 50  0001 C CNN
+	1    4450 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4700 4450 4850
+Wire Wire Line
+	4200 4500 4450 4500
+$Comp
+L power:+24V #PWR01
+U 1 1 5E55920D
+P 4450 4400
+F 0 "#PWR01" H 4450 4250 50  0001 C CNN
+F 1 "+24V" H 4465 4573 50  0000 C CNN
+F 2 "" H 4450 4400 50  0001 C CNN
+F 3 "" H 4450 4400 50  0001 C CNN
+	1    4450 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4400 4450 4500
+Wire Wire Line
+	5000 4950 5500 4950
+$Comp
+L Device:R R3
+U 1 1 5E559219
+P 5650 4950
+F 0 "R3" V 5443 4950 50  0000 C CNN
+F 1 "4.7k" V 5534 4950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5580 4950 50  0001 C CNN
+F 3 "~" H 5650 4950 50  0001 C CNN
+	1    5650 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5800 4950 5850 4950
+Wire Wire Line
+	5850 4950 5850 5000
+$Comp
+L Device:R R4
+U 1 1 5E559225
+P 5850 5150
+F 0 "R4" H 5920 5196 50  0000 L CNN
+F 1 "4.7k" H 5920 5105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5780 5150 50  0001 C CNN
+F 3 "~" H 5850 5150 50  0001 C CNN
+	1    5850 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 5300 5850 5350
+$Comp
+L power:GND #PWR03
+U 1 1 5E559230
+P 5850 5350
+F 0 "#PWR03" H 5850 5100 50  0001 C CNN
+F 1 "GND" H 5855 5177 50  0000 C CNN
+F 2 "" H 5850 5350 50  0001 C CNN
+F 3 "" H 5850 5350 50  0001 C CNN
+	1    5850 5350
+	1    0    0    -1  
+$EndComp
+Text Label 5000 4950 0    50   ~ 0
+SensorOut1
+$Comp
+L Connector:Screw_Terminal_01x04 J4
+U 1 1 5E55923B
+P 4000 4600
+F 0 "J4" H 4000 4800 50  0000 C CNN
+F 1 "Sensor1" H 4250 4300 50  0000 R CNN
+F 2 "ultrasonic_roborio:LSF-SMT 3.50_04_135 3.5SN" H 4000 4600 50  0001 C CNN
+F 3 "~" H 4000 4600 50  0001 C CNN
+	1    4000 4600
+	-1   0    0    -1  
+$EndComp
+Text Label 5000 4200 0    50   ~ 0
+Teach1
+Wire Wire Line
+	5000 4200 5500 4200
+Wire Wire Line
+	5500 4000 5500 4200
+Connection ~ 5500 4200
+Wire Wire Line
+	5500 4200 5500 4400
+Wire Wire Line
+	5950 3950 5950 4000
+Wire Wire Line
+	5950 4000 5900 4000
+$Comp
+L power:+24V #PWR04
+U 1 1 5E55924C
+P 5950 3950
+F 0 "#PWR04" H 5950 3800 50  0001 C CNN
+F 1 "+24V" H 5965 4123 50  0000 C CNN
+F 2 "" H 5950 3950 50  0001 C CNN
+F 3 "" H 5950 3950 50  0001 C CNN
+	1    5950 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5E559256
+P 5950 4450
+F 0 "#PWR05" H 5950 4200 50  0001 C CNN
+F 1 "GND" H 5955 4277 50  0000 C CNN
+F 2 "" H 5950 4450 50  0001 C CNN
+F 3 "" H 5950 4450 50  0001 C CNN
+	1    5950 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4400 5950 4400
+Wire Wire Line
+	5950 4400 5950 4450
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5E559262
+P 5700 4000
+F 0 "SW2" H 5700 4193 50  0000 C CNN
+F 1 "SW_Push" H 5700 4194 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 5700 4200 50  0001 C CNN
+F 3 "~" H 5700 4200 50  0001 C CNN
+	1    5700 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5E55926C
+P 5700 4400
+F 0 "SW3" H 5700 4593 50  0000 C CNN
+F 1 "SW_Push" H 5700 4594 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 5700 4600 50  0001 C CNN
+F 3 "~" H 5700 4600 50  0001 C CNN
+	1    5700 4400
+	1    0    0    -1  
+$EndComp
+Connection ~ 5850 4950
+Wire Wire Line
+	5850 4950 6100 4950
+$Comp
+L Connector:Conn_01x03_Female J5
+U 1 1 5E559278
+P 6950 4600
+F 0 "J5" H 6900 4800 50  0000 L CNN
+F 1 "roboRIO A1" H 6900 4400 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 6950 4600 50  0001 C CNN
+F 3 "~" H 6950 4600 50  0001 C CNN
+	1    6950 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP3
+U 1 1 5E559282
+P 6500 4900
+F 0 "JP3" V 6500 4968 50  0000 L CNN
+F 1 "SolderJumper_2_Open" H 6500 5014 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 6500 4900 50  0001 C CNN
+F 3 "~" H 6500 4900 50  0001 C CNN
+	1    6500 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6750 4500 6500 4500
+Wire Wire Line
+	6750 4600 6500 4600
+Text Label 6500 4500 0    50   ~ 0
+Out1
+Text Label 6100 4950 2    50   ~ 0
+Out1
+Wire Wire Line
+	6500 4750 6500 4700
+Wire Wire Line
+	6500 4700 6750 4700
+NoConn ~ 6500 4600
+$Comp
+L power:GND #PWR06
+U 1 1 5E559294
+P 6500 5100
+F 0 "#PWR06" H 6500 4850 50  0001 C CNN
+F 1 "GND" H 6505 4927 50  0000 C CNN
+F 2 "" H 6500 5100 50  0001 C CNN
+F 3 "" H 6500 5100 50  0001 C CNN
+	1    6500 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 5100 6500 5050
+Text Notes 7000 4550 0    50   ~ 0
+S
+Text Notes 7000 4650 0    50   ~ 0
+5V
+Text Notes 7000 4750 0    50   ~ 0
+GND
+$Comp
+L Connector:Screw_Terminal_01x04 J2
+U 1 1 5E5175C3
+P 4000 2150
+F 0 "J2" H 4000 2350 50  0000 C CNN
+F 1 "Sensor0" H 3950 1850 50  0000 L CNN
+F 2 "ultrasonic_roborio:LSF-SMT 3.50_04_135 3.5SN" H 4000 2150 50  0001 C CNN
+F 3 "~" H 4000 2150 50  0001 C CNN
+	1    4000 2150
+	-1   0    0    -1  
+$EndComp
+$EndSCHEMATC
